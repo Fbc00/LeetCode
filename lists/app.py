@@ -72,18 +72,14 @@ def findMedianSortedArrays( nums1: List[int], nums2: List[int]) -> float:
 def maximumGap(nums: List[int]) -> int:
     gap = 0
     nums.sort()
-    for key, value in enumerate(nums):
-        aux = key + 1
-        try:
-            if (nums[aux] - value) > gap:
-                gap = nums[aux] - value
-        except:
-            continue
+    for i in range(0, len(nums) - 1):
+        if (nums[i+1] - nums[i]) > gap:
+            gap = nums[i+1] - nums[i]
     return gap
 if __name__ == '__main__':
-    print(findMedianSortedArrays([1, 3], [2]))
-    print(reverse(-123))
-    print(isPalindrome(121))
+    # print(findMedianSortedArrays([1, 3], [2]))
+    # print(reverse(-123))
+    # print(isPalindrome(121))
     print(maximumGap([3,6,9,1]))
-    print(romanToInteger("MCMXCIV"))
-    print(isHappy(19))
+    # print(romanToInteger("MCMXCIV"))
+    # print(isHappy(19))
