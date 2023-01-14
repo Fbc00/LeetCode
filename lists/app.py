@@ -77,9 +77,9 @@ def maximumGap(nums: List[int]) -> int:
             gap = nums[i+1] - nums[i]
     return gap
 if __name__ == '__main__':
-    print(findMedianSortedArrays([1, 3], [2]))
-    print(reverse(-123))
-    print(isPalindrome(121))
+    # print(findMedianSortedArrays([1, 3], [2]))
+    # print(reverse(-123))
+    # print(isPalindrome(121))
     print(maximumGap([3,6,9,1]))
-    print(romanToInteger("MCMXCIV"))
-    print(isHappy(19))
+    # print(romanToInteger("MCMXCIV"))
+    # print(isHappy(19))
